@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Prowler",
+    "website": "https://prowler.com",
+    "category": "CSPM",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Open Source",
+    "distinct": "Large benchmark coverage with pragmatic cloud misconfiguration checks.",
+    "compliance": ["SOC 2", "PCI DSS", "CIS"]
+  },
+  {
+    "name": "Wiz",
+    "website": "https://www.wiz.io",
+    "category": "CNAPP",
+    "clouds": ["Multi"],
+    "type": "Commercial",
+    "distinct": "Graph-based cloud attack path visibility across workloads and identities.",
+    "compliance": ["SOC 2", "HIPAA", "PCI DSS", "FedRAMP"]
+  },
+  {
+    "name": "Prisma Cloud",
+    "website": "https://www.paloaltonetworks.com/prisma/cloud",
+    "category": "CNAPP",
+    "clouds": ["Multi"],
+    "type": "Commercial",
+    "distinct": "Broad CNAPP suite spanning code, runtime, and cloud posture domains.",
+    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+  },
+  {
+    "name": "Checkov",
+    "website": "https://www.checkov.io",
+    "category": "IaC Security",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Open Source",
+    "distinct": "Policy-as-code scanning for Terraform, Kubernetes, and CloudFormation.",
+    "compliance": ["SOC 2", "PCI DSS", "CIS"]
+  },
+  {
+    "name": "tfsec",
+    "website": "https://aquasecurity.github.io/tfsec/",
+    "category": "IaC Security",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Open Source",
+    "distinct": "Fast local Terraform static analysis with clear remediation output.",
+    "compliance": ["CIS", "PCI DSS"]
+  },
+  {
+    "name": "Snyk IaC",
+    "website": "https://snyk.io/product/iac-security/",
+    "category": "IaC Security",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Freemium",
+    "distinct": "Developer-first IaC checks tightly integrated into pull request flow.",
+    "compliance": ["SOC 2", "HIPAA", "PCI DSS"]
+  },
+  {
+    "name": "TruffleHog",
+    "website": "https://trufflesecurity.com/trufflehog",
+    "category": "Secrets Scanning",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "High-signal secret discovery with verified credential checks.",
+    "compliance": ["SOC 2", "PCI DSS"]
+  },
+  {
+    "name": "Gitleaks",
+    "website": "https://gitleaks.io",
+    "category": "Secrets Scanning",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Simple, fast, and CI-friendly scanner for leaked credentials.",
+    "compliance": ["SOC 2", "PCI DSS"]
+  },
+  {
+    "name": "Aqua Trivy",
+    "website": "https://trivy.dev",
+    "category": "Container Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Single CLI for image, filesystem, and IaC vulnerability checks.",
+    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+  },
+  {
+    "name": "Falco",
+    "website": "https://falco.org",
+    "category": "Container Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Runtime threat detection for containers and Kubernetes workloads.",
+    "compliance": ["SOC 2", "NIST"]
+  },
+  {
+    "name": "Open Policy Agent",
+    "website": "https://www.openpolicyagent.org",
+    "category": "Compliance as Code",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "General-purpose policy engine used from CI to admission control.",
+    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+  },
+  {
+    "name": "Cloud Custodian",
+    "website": "https://cloudcustodian.io",
+    "category": "Compliance as Code",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Open Source",
+    "distinct": "Policy-driven cloud resource governance and automated remediation.",
+    "compliance": ["SOC 2", "PCI DSS", "HIPAA"]
+  },
+  {
+    "name": "Syft",
+    "website": "https://github.com/anchore/syft",
+    "category": "SBOM & Supply Chain",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Developer-friendly SBOM generator with broad package ecosystem support.",
+    "compliance": ["NIST", "FedRAMP"]
+  },
+  {
+    "name": "Grype",
+    "website": "https://github.com/anchore/grype",
+    "category": "SBOM & Supply Chain",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Vulnerability scanner designed to pair directly with generated SBOMs.",
+    "compliance": ["NIST", "PCI DSS"]
+  },
+  {
+    "name": "Permiso",
+    "website": "https://permiso.io",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Commercial",
+    "distinct": "Identity-centric detection focused on cloud service account abuse.",
+    "compliance": ["SOC 2", "FedRAMP"]
+  },
+  {
+    "name": "PMapper",
+    "website": "https://github.com/nccgroup/PMapper",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Privilege escalation path analysis for AWS IAM role relationships.",
+    "compliance": ["CIS", "NIST"]
+  },
+  {
+    "name": "Scout Suite",
+    "website": "https://github.com/nccgroup/ScoutSuite",
+    "category": "CSPM",
+    "clouds": ["AWS", "Azure", "GCP"],
+    "type": "Open Source",
+    "distinct": "Multi-cloud security audit with visualized findings and drill-down.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "Steampipe",
+    "website": "https://steampipe.io",
+    "category": "Compliance as Code",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Query cloud APIs with SQL for rapid compliance checks and dashboards.",
+    "compliance": ["SOC 2", "NIST", "PCI DSS"]
+  }
+]
