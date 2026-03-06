@@ -17,3 +17,7 @@ jobs:
           node-version: 20
       - name: Validate
         run: node scripts/validate-tools.mjs
+      - name: Regenerate README
+        run: node scripts/generate-readme.mjs
+      - name: Ensure README is current
+        run: git diff --exit-code README.md
