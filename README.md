@@ -15,12 +15,6 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 - Live directory: [https://cloudguardrail.com/tools](https://cloudguardrail.com/tools)
 - Contribute: [Open a PR](https://github.com/g4r-tech/awesome-cloud-guardrails/pulls)
 
-## Automation
-
-- On merges to `main` that change `data/tools.json` or `schema/tools.schema.json`, this repo triggers a deployment event in the private site repo (`g4r-tech/cloudguardrail`).
-- The private site repo then runs its Cloudflare Pages deploy workflow and pulls fresh dataset data during build.
-- Required secret in this public repo: `PRIVATE_REPO_DISPATCH_TOKEN` (GitHub token with access to `g4r-tech/cloudguardrail` Actions dispatch).
-
 ## Dataset Snapshot
 
 | Metric | Value |

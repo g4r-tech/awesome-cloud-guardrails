@@ -7,6 +7,9 @@ on:
       - 'data/tools.json'
       - 'schema/tools.schema.json'
 
+permissions:
+  contents: read
+
 jobs:
   dispatch:
     runs-on: ubuntu-latest
