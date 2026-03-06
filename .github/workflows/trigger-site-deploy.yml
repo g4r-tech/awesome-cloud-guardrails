@@ -1,0 +1,20 @@
+name: Trigger Private Site Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/tools.json'
+      - 'schema/tools.schema.json'
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deploy in private site repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PRIVATE_REPO_DISPATCH_TOKEN }}
+          repository: g4r-tech/cloudguardrail
+          event-type: public-tools-updated
+          client-payload: '{"source":"awesome-cloud-guardrails"}'
