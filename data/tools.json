@@ -160,5 +160,95 @@
     "type": "Open Source",
     "distinct": "Query cloud APIs with SQL for rapid compliance checks and dashboards.",
     "compliance": ["SOC 2", "NIST", "PCI DSS"]
+  },
+  {
+    "name": "CloudMapper",
+    "website": "https://github.com/duo-labs/cloudmapper",
+    "category": "CSPM",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Visualizes AWS account relationships and attack paths for security review.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "aws-nuke",
+    "website": "https://github.com/rebuy-de/aws-nuke",
+    "category": "Compliance as Code",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Automates safe teardown of AWS resources to enforce clean account baselines.",
+    "compliance": ["NIST", "SOC 2"]
+  },
+  {
+    "name": "Pacu",
+    "website": "https://github.com/RhinoSecurityLabs/pacu",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "AWS exploitation framework for testing IAM abuse paths and cloud misconfigurations.",
+    "compliance": ["NIST", "CIS"]
+  },
+  {
+    "name": "Security Monkey",
+    "website": "https://github.com/netflix/security_monkey",
+    "category": "CSPM",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Monitors cloud account changes and flags policy and configuration drift.",
+    "compliance": ["SOC 2", "NIST", "CIS"]
+  },
+  {
+    "name": "CloudGoat",
+    "website": "https://github.com/RhinoSecurityLabs/cloudgoat",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Purpose-built AWS scenarios for validating detection and IAM attack-path readiness.",
+    "compliance": ["NIST", "SOC 2"]
+  },
+  {
+    "name": "Cloudsplaining",
+    "website": "https://github.com/salesforce/cloudsplaining",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Identifies risky IAM permissions and privilege-escalation patterns in AWS policies.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "Terragoat",
+    "website": "https://github.com/bridgecrewio/terragoat",
+    "category": "IaC Security",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Deliberately vulnerable Terraform stack for testing IaC misconfiguration detection.",
+    "compliance": ["NIST", "CIS"]
+  },
+  {
+    "name": "Parliament",
+    "website": "https://github.com/duo-labs/parliament",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Lints IAM policies to catch privilege, wildcard, and risky permission issues early.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "CloudTracker",
+    "website": "https://github.com/duo-labs/cloudtracker",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Compares CloudTrail activity to granted IAM permissions to spot over-privileged identities.",
+    "compliance": ["NIST", "SOC 2"]
+  },
+  {
+    "name": "SkyArk",
+    "website": "https://github.com/cyberark/SkyArk",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Finds and assesses highly privileged AWS entities that increase account takeover risk.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
   }
 ]
