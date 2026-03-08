@@ -340,5 +340,113 @@
     "type": "Freemium",
     "distinct": "Developer-friendly secret detection in commits and CI pipelines with strong accuracy.",
     "compliance": ["SOC 2", "PCI DSS"]
+  },
+  {
+    "name": "Orca Security",
+    "website": "https://orca.security",
+    "category": "CNAPP",
+    "clouds": ["Multi"],
+    "type": "Commercial",
+    "distinct": "Agentless CNAPP platform focused on broad cloud asset and risk visibility.",
+    "compliance": ["SOC 2", "PCI DSS", "FedRAMP"]
+  },
+  {
+    "name": "Lacework",
+    "website": "https://www.lacework.com",
+    "category": "CNAPP",
+    "clouds": ["Multi"],
+    "type": "Commercial",
+    "distinct": "Behavior-based CNAPP detection across cloud, containers, and identities.",
+    "compliance": ["SOC 2", "PCI DSS", "HIPAA"]
+  },
+  {
+    "name": "Sysdig Secure",
+    "website": "https://sysdig.com/products/secure/",
+    "category": "CNAPP",
+    "clouds": ["Multi"],
+    "type": "Commercial",
+    "distinct": "Combines cloud posture, runtime threat detection, and container vulnerability controls.",
+    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+  },
+  {
+    "name": "Tenable Cloud Security",
+    "website": "https://www.tenable.com/products/tenable-cloud-security",
+    "category": "CNAPP",
+    "clouds": ["Multi"],
+    "type": "Commercial",
+    "distinct": "CNAPP offering with strong posture analytics and entitlement risk visibility.",
+    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+  },
+  {
+    "name": "KICS",
+    "website": "https://github.com/Checkmarx/kics",
+    "category": "IaC Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Static analysis engine for Terraform, Kubernetes, and other IaC formats.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "Terrascan",
+    "website": "https://github.com/tenable/terrascan",
+    "category": "IaC Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Policy-based IaC scanner with broad cloud provider and framework coverage.",
+    "compliance": ["CIS", "NIST", "PCI DSS"]
+  },
+  {
+    "name": "cfn-nag",
+    "website": "https://github.com/stelligent/cfn_nag",
+    "category": "IaC Security",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Lints CloudFormation templates to detect risky security configurations before deploy.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "Trivy Operator",
+    "website": "https://github.com/aquasecurity/trivy-operator",
+    "category": "Container Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Brings continuous vulnerability and configuration scanning into Kubernetes clusters.",
+    "compliance": ["CIS", "NIST"]
+  },
+  {
+    "name": "Kyverno",
+    "website": "https://github.com/kyverno/kyverno",
+    "category": "Compliance as Code",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Kubernetes-native policy engine for enforceable guardrails and admission controls.",
+    "compliance": ["NIST", "SOC 2", "PCI DSS"]
+  },
+  {
+    "name": "Kubewarden",
+    "website": "https://github.com/kubewarden/kubewarden-controller",
+    "category": "Compliance as Code",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Admission policy framework using WebAssembly for portable Kubernetes enforcement.",
+    "compliance": ["NIST", "CIS"]
+  },
+  {
+    "name": "detect-secrets",
+    "website": "https://github.com/Yelp/detect-secrets",
+    "category": "Secrets Scanning",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Pre-commit focused secret scanner with baseline workflows for noisy repositories.",
+    "compliance": ["SOC 2", "PCI DSS"]
+  },
+  {
+    "name": "shhgit",
+    "website": "https://github.com/eth0izzle/shhgit",
+    "category": "Secrets Scanning",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Real-time GitHub secret monitoring to quickly surface exposed credentials.",
+    "compliance": ["SOC 2", "NIST"]
   }
 ]

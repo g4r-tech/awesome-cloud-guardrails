@@ -19,12 +19,12 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 
 | Metric | Value |
 |---|---:|
-| Total tools | 38 |
+| Total tools | 50 |
 | Categories | 8 |
 | Cloud support values in schema | 4 |
 | Compliance frameworks referenced | 6 |
-| Open Source tools | 33 |
-| Commercial tools | 3 |
+| Open Source tools | 41 |
+| Commercial tools | 7 |
 | Freemium tools | 2 |
 
 ## Allowed Schema Values
@@ -46,32 +46,41 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [Scout Suite](https://github.com/nccgroup/ScoutSuite) | Open Source | AWS, Azure, GCP | Multi-cloud security audit with visualized findings and drill-down. |
 | [Security Monkey](https://github.com/netflix/security_monkey) | Open Source | AWS | Monitors cloud account changes and flags policy and configuration drift. |
 
-### CNAPP (2)
+### CNAPP (6)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
+| [Lacework](https://www.lacework.com) | Commercial | Multi | Behavior-based CNAPP detection across cloud, containers, and identities. |
+| [Orca Security](https://orca.security) | Commercial | Multi | Agentless CNAPP platform focused on broad cloud asset and risk visibility. |
 | [Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud) | Commercial | Multi | Broad CNAPP suite spanning code, runtime, and cloud posture domains. |
+| [Sysdig Secure](https://sysdig.com/products/secure/) | Commercial | Multi | Combines cloud posture, runtime threat detection, and container vulnerability controls. |
+| [Tenable Cloud Security](https://www.tenable.com/products/tenable-cloud-security) | Commercial | Multi | CNAPP offering with strong posture analytics and entitlement risk visibility. |
 | [Wiz](https://www.wiz.io) | Commercial | Multi | Graph-based cloud attack path visibility across workloads and identities. |
 
-### IaC Security (5)
+### IaC Security (8)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
 | [cdk-nag](https://github.com/cdklabs/cdk-nag) | Open Source | AWS | Applies security and compliance rules to AWS CDK constructs during development. |
+| [cfn-nag](https://github.com/stelligent/cfn_nag) | Open Source | AWS | Lints CloudFormation templates to detect risky security configurations before deploy. |
 | [Checkov](https://www.checkov.io) | Open Source | AWS, Azure, GCP | Policy-as-code scanning for Terraform, Kubernetes, and CloudFormation. |
+| [KICS](https://github.com/Checkmarx/kics) | Open Source | Multi | Static analysis engine for Terraform, Kubernetes, and other IaC formats. |
 | [Snyk IaC](https://snyk.io/product/iac-security/) | Freemium | AWS, Azure, GCP | Developer-first IaC checks tightly integrated into pull request flow. |
 | [Terragoat](https://github.com/bridgecrewio/terragoat) | Open Source | AWS | Deliberately vulnerable Terraform stack for testing IaC misconfiguration detection. |
+| [Terrascan](https://github.com/tenable/terrascan) | Open Source | Multi | Policy-based IaC scanner with broad cloud provider and framework coverage. |
 | [tfsec](https://aquasecurity.github.io/tfsec/) | Open Source | AWS, Azure, GCP | Fast local Terraform static analysis with clear remediation output. |
 
-### Secrets Scanning (3)
+### Secrets Scanning (5)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
+| [detect-secrets](https://github.com/Yelp/detect-secrets) | Open Source | Multi | Pre-commit focused secret scanner with baseline workflows for noisy repositories. |
 | [GitGuardian ggshield](https://github.com/GitGuardian/ggshield) | Freemium | Multi | Developer-friendly secret detection in commits and CI pipelines with strong accuracy. |
 | [Gitleaks](https://gitleaks.io) | Open Source | Multi | Simple, fast, and CI-friendly scanner for leaked credentials. |
+| [shhgit](https://github.com/eth0izzle/shhgit) | Open Source | Multi | Real-time GitHub secret monitoring to quickly surface exposed credentials. |
 | [TruffleHog](https://trufflesecurity.com/trufflehog) | Open Source | Multi | High-signal secret discovery with verified credential checks. |
 
-### Container Security (5)
+### Container Security (6)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
@@ -80,14 +89,17 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [kube-bench](https://github.com/aquasecurity/kube-bench) | Open Source | Multi | Runs CIS Kubernetes benchmark checks against cluster nodes and control planes. |
 | [kube-hunter](https://github.com/aquasecurity/kube-hunter) | Open Source | Multi | Performs active reconnaissance to identify exposed Kubernetes security weaknesses. |
 | [Kubescape](https://github.com/kubescape/kubescape) | Open Source | Multi | Kubernetes posture scanner with framework mappings and risk prioritization guidance. |
+| [Trivy Operator](https://github.com/aquasecurity/trivy-operator) | Open Source | Multi | Brings continuous vulnerability and configuration scanning into Kubernetes clusters. |
 
-### Compliance as Code (5)
+### Compliance as Code (7)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
 | [aws-nuke](https://github.com/rebuy-de/aws-nuke) | Open Source | AWS | Automates safe teardown of AWS resources to enforce clean account baselines. |
 | [Cloud Custodian](https://cloudcustodian.io) | Open Source | AWS, Azure, GCP | Policy-driven cloud resource governance and automated remediation. |
 | [CloudQuery](https://github.com/cloudquery/cloudquery) | Open Source | Multi | Extracts cloud configuration data into SQL tables for policy checks and reporting. |
+| [Kubewarden](https://github.com/kubewarden/kubewarden-controller) | Open Source | Multi | Admission policy framework using WebAssembly for portable Kubernetes enforcement. |
+| [Kyverno](https://github.com/kyverno/kyverno) | Open Source | Multi | Kubernetes-native policy engine for enforceable guardrails and admission controls. |
 | [Open Policy Agent](https://www.openpolicyagent.org) | Open Source | Multi | General-purpose policy engine used from CI to admission control. |
 | [Steampipe](https://steampipe.io) | Open Source | Multi | Query cloud APIs with SQL for rapid compliance checks and dashboards. |
 
