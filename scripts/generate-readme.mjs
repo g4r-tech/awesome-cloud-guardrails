@@ -21,7 +21,6 @@ const getSchemaEnum = (prop) => {
 const categories = getSchemaEnum('category');
 const cloudValues = getSchemaEnum('clouds');
 const typeValues = getSchemaEnum('type');
-const confidenceValues = getSchemaEnum('curationConfidence');
 
 const byCategory = new Map();
 for (const category of categories) {
@@ -46,10 +45,8 @@ for (const tool of tools) {
 }
 
 const typeCounts = new Map(typeValues.map((type) => [type, 0]));
-const confidenceCounts = new Map(confidenceValues.map((value) => [value, 0]));
 for (const tool of tools) {
   typeCounts.set(tool.type, (typeCounts.get(tool.type) || 0) + 1);
-  confidenceCounts.set(tool.curationConfidence, (confidenceCounts.get(tool.curationConfidence) || 0) + 1);
 }
 
 const lines = [];
@@ -81,16 +78,12 @@ lines.push(`| Compliance frameworks referenced | ${uniqueCompliance.size} |`);
 lines.push(`| Open Source tools | ${typeCounts.get('Open Source') || 0} |`);
 lines.push(`| Commercial tools | ${typeCounts.get('Commercial') || 0} |`);
 lines.push(`| Freemium tools | ${typeCounts.get('Freemium') || 0} |`);
-lines.push(`| High confidence | ${confidenceCounts.get('high') || 0} |`);
-lines.push(`| Medium confidence | ${confidenceCounts.get('medium') || 0} |`);
-lines.push(`| Provisional confidence | ${confidenceCounts.get('provisional') || 0} |`);
 lines.push('');
 lines.push('## Allowed Schema Values');
 lines.push('');
 lines.push(`- \`category\`: ${categories.join(', ')}`);
 lines.push(`- \`clouds\`: ${cloudValues.join(', ')}`);
 lines.push(`- \`type\`: ${typeValues.join(', ')}`);
-lines.push(`- \`curationConfidence\`: ${confidenceValues.join(', ')}`);
 lines.push('');
 lines.push('## Tool Index');
 lines.push('');
@@ -104,13 +97,13 @@ for (const category of categories) {
     lines.push('');
     continue;
   }
-  lines.push('| Tool | Type | Confidence | Clouds | Why It Stands Out |');
-  lines.push('|---|---|---|---|---|');
+  lines.push('| Tool | Type | Clouds | Why It Stands Out |');
+  lines.push('|---|---|---|---|');
   for (const tool of toolsInCategory) {
     const name = `[${tool.name}](${tool.website})`;
     const clouds = tool.clouds.join(', ');
     const distinct = String(tool.distinct).replace(/\|/g, '\\|');
-    lines.push(`| ${name} | ${tool.type} | ${tool.curationConfidence} | ${clouds} | ${distinct} |`);
+    lines.push(`| ${name} | ${tool.type} | ${clouds} | ${distinct} |`);
   }
   lines.push('');
 }

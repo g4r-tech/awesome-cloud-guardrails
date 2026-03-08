@@ -14,9 +14,7 @@
       "SOC 2",
       "PCI DSS",
       "CIS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Wiz",
@@ -32,9 +30,7 @@
       "HIPAA",
       "PCI DSS",
       "FedRAMP"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Prisma Cloud",
@@ -49,9 +45,7 @@
       "SOC 2",
       "PCI DSS",
       "NIST"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Checkov",
@@ -68,9 +62,7 @@
       "SOC 2",
       "PCI DSS",
       "CIS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "tfsec",
@@ -86,9 +78,7 @@
     "compliance": [
       "CIS",
       "PCI DSS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Snyk IaC",
@@ -105,9 +95,7 @@
       "SOC 2",
       "HIPAA",
       "PCI DSS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "TruffleHog",
@@ -121,9 +109,7 @@
     "compliance": [
       "SOC 2",
       "PCI DSS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Gitleaks",
@@ -137,9 +123,7 @@
     "compliance": [
       "SOC 2",
       "PCI DSS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Aqua Trivy",
@@ -154,9 +138,7 @@
       "SOC 2",
       "PCI DSS",
       "NIST"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Falco",
@@ -170,9 +152,7 @@
     "compliance": [
       "SOC 2",
       "NIST"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Open Policy Agent",
@@ -187,9 +167,7 @@
       "SOC 2",
       "PCI DSS",
       "NIST"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Cloud Custodian",
@@ -206,9 +184,7 @@
       "SOC 2",
       "PCI DSS",
       "HIPAA"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Syft",
@@ -222,9 +198,7 @@
     "compliance": [
       "NIST",
       "FedRAMP"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Grype",
@@ -238,9 +212,7 @@
     "compliance": [
       "NIST",
       "PCI DSS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Permiso",
@@ -256,9 +228,7 @@
     "compliance": [
       "SOC 2",
       "FedRAMP"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "PMapper",
@@ -272,9 +242,7 @@
     "compliance": [
       "CIS",
       "NIST"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Scout Suite",
@@ -291,9 +259,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Steampipe",
@@ -308,9 +274,7 @@
       "SOC 2",
       "NIST",
       "PCI DSS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "CloudMapper",
@@ -325,9 +289,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "aws-nuke",
@@ -341,9 +303,7 @@
     "compliance": [
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Pacu",
@@ -357,9 +317,7 @@
     "compliance": [
       "NIST",
       "CIS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Security Monkey",
@@ -374,9 +332,7 @@
       "SOC 2",
       "NIST",
       "CIS"
-    ],
-    "curationConfidence": "provisional",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "CloudGoat",
@@ -390,9 +346,7 @@
     "compliance": [
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "provisional",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Cloudsplaining",
@@ -407,9 +361,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Terragoat",
@@ -423,9 +375,7 @@
     "compliance": [
       "NIST",
       "CIS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Parliament",
@@ -440,9 +390,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "CloudTracker",
@@ -456,9 +404,7 @@
     "compliance": [
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "SkyArk",
@@ -473,9 +419,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "provisional",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "CloudSploit Scans",
@@ -490,9 +434,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "AWS Inventory",
@@ -507,9 +449,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Cartography",
@@ -523,9 +463,7 @@
     "compliance": [
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "CloudQuery",
@@ -540,9 +478,7 @@
       "NIST",
       "PCI DSS",
       "SOC 2"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "cdk-nag",
@@ -557,9 +493,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "kube-bench",
@@ -573,9 +507,7 @@
     "compliance": [
       "CIS",
       "NIST"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "kube-hunter",
@@ -589,9 +521,7 @@
     "compliance": [
       "NIST",
       "CIS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Kubescape",
@@ -606,9 +536,7 @@
       "NIST",
       "CIS",
       "SOC 2"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Peirates",
@@ -622,9 +550,7 @@
     "compliance": [
       "NIST",
       "CIS"
-    ],
-    "curationConfidence": "provisional",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "GitGuardian ggshield",
@@ -638,9 +564,7 @@
     "compliance": [
       "SOC 2",
       "PCI DSS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Orca Security",
@@ -655,9 +579,7 @@
       "SOC 2",
       "PCI DSS",
       "FedRAMP"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Lacework",
@@ -672,9 +594,7 @@
       "SOC 2",
       "PCI DSS",
       "HIPAA"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Sysdig Secure",
@@ -689,9 +609,7 @@
       "SOC 2",
       "PCI DSS",
       "NIST"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Tenable Cloud Security",
@@ -706,9 +624,7 @@
       "SOC 2",
       "PCI DSS",
       "NIST"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "KICS",
@@ -723,9 +639,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Terrascan",
@@ -740,9 +654,7 @@
       "CIS",
       "NIST",
       "PCI DSS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "cfn-nag",
@@ -757,9 +669,7 @@
       "CIS",
       "NIST",
       "SOC 2"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Trivy Operator",
@@ -773,9 +683,7 @@
     "compliance": [
       "CIS",
       "NIST"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Kyverno",
@@ -790,9 +698,7 @@
       "NIST",
       "SOC 2",
       "PCI DSS"
-    ],
-    "curationConfidence": "high",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "Kubewarden",
@@ -806,9 +712,7 @@
     "compliance": [
       "NIST",
       "CIS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "detect-secrets",
@@ -822,9 +726,7 @@
     "compliance": [
       "SOC 2",
       "PCI DSS"
-    ],
-    "curationConfidence": "medium",
-    "lastReviewed": "2026-03-08"
+    ]
   },
   {
     "name": "shhgit",
@@ -838,8 +740,6 @@
     "compliance": [
       "SOC 2",
       "NIST"
-    ],
-    "curationConfidence": "provisional",
-    "lastReviewed": "2026-03-08"
+    ]
   }
 ]

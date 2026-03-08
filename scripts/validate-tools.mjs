@@ -13,7 +13,6 @@ const allowedCategories = new Set([
 ]);
 const allowedClouds = new Set(['AWS', 'Azure', 'GCP', 'Multi']);
 const allowedTypes = new Set(['Open Source', 'Commercial', 'Freemium']);
-const allowedConfidence = new Set(['high', 'medium', 'provisional']);
 
 if (!Array.isArray(data) || data.length === 0) {
   console.error('tools.json must contain a non-empty array');
@@ -30,9 +29,7 @@ for (const [i, item] of data.entries()) {
     !item?.clouds ||
     !item?.type ||
     !item?.distinct ||
-    !item?.compliance ||
-    !item?.curationConfidence ||
-    !item?.lastReviewed
+    !item?.compliance
   ) {
     console.error(`entry[${i}] missing required fields`);
     process.exit(1);
@@ -70,10 +67,6 @@ for (const [i, item] of data.entries()) {
     console.error(`entry[${i}] invalid type: ${item.type}`);
     process.exit(1);
   }
-  if (!allowedConfidence.has(item.curationConfidence)) {
-    console.error(`entry[${i}] invalid curationConfidence: ${item.curationConfidence}`);
-    process.exit(1);
-  }
   if (!Array.isArray(item.clouds) || item.clouds.length === 0 || item.clouds.some((cloud) => !allowedClouds.has(cloud))) {
     console.error(`entry[${i}] invalid clouds`);
     process.exit(1);
@@ -88,11 +81,6 @@ for (const [i, item] of data.entries()) {
     process.exit(1);
   }
 
-  const reviewed = String(item.lastReviewed);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(reviewed) || Number.isNaN(Date.parse(reviewed))) {
-    console.error(`entry[${i}] invalid lastReviewed format, expected YYYY-MM-DD`);
-    process.exit(1);
-  }
 }
 
 console.log(`Validated ${data.length} tool entries.`);
