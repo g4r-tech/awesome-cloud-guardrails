@@ -3,450 +3,843 @@
     "name": "Prowler",
     "website": "https://prowler.com",
     "category": "CSPM",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Open Source",
     "distinct": "Large benchmark coverage with pragmatic cloud misconfiguration checks.",
-    "compliance": ["SOC 2", "PCI DSS", "CIS"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "CIS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Wiz",
     "website": "https://www.wiz.io",
     "category": "CNAPP",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Commercial",
     "distinct": "Graph-based cloud attack path visibility across workloads and identities.",
-    "compliance": ["SOC 2", "HIPAA", "PCI DSS", "FedRAMP"]
+    "compliance": [
+      "SOC 2",
+      "HIPAA",
+      "PCI DSS",
+      "FedRAMP"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Prisma Cloud",
     "website": "https://www.paloaltonetworks.com/prisma/cloud",
     "category": "CNAPP",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Commercial",
     "distinct": "Broad CNAPP suite spanning code, runtime, and cloud posture domains.",
-    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "NIST"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Checkov",
     "website": "https://www.checkov.io",
     "category": "IaC Security",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Open Source",
     "distinct": "Policy-as-code scanning for Terraform, Kubernetes, and CloudFormation.",
-    "compliance": ["SOC 2", "PCI DSS", "CIS"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "CIS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "tfsec",
     "website": "https://aquasecurity.github.io/tfsec/",
     "category": "IaC Security",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Open Source",
     "distinct": "Fast local Terraform static analysis with clear remediation output.",
-    "compliance": ["CIS", "PCI DSS"]
+    "compliance": [
+      "CIS",
+      "PCI DSS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Snyk IaC",
     "website": "https://snyk.io/product/iac-security/",
     "category": "IaC Security",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Freemium",
     "distinct": "Developer-first IaC checks tightly integrated into pull request flow.",
-    "compliance": ["SOC 2", "HIPAA", "PCI DSS"]
+    "compliance": [
+      "SOC 2",
+      "HIPAA",
+      "PCI DSS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "TruffleHog",
     "website": "https://trufflesecurity.com/trufflehog",
     "category": "Secrets Scanning",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "High-signal secret discovery with verified credential checks.",
-    "compliance": ["SOC 2", "PCI DSS"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Gitleaks",
     "website": "https://gitleaks.io",
     "category": "Secrets Scanning",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Simple, fast, and CI-friendly scanner for leaked credentials.",
-    "compliance": ["SOC 2", "PCI DSS"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Aqua Trivy",
     "website": "https://trivy.dev",
     "category": "Container Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Single CLI for image, filesystem, and IaC vulnerability checks.",
-    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "NIST"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Falco",
     "website": "https://falco.org",
     "category": "Container Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Runtime threat detection for containers and Kubernetes workloads.",
-    "compliance": ["SOC 2", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "NIST"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Open Policy Agent",
     "website": "https://www.openpolicyagent.org",
     "category": "Compliance as Code",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "General-purpose policy engine used from CI to admission control.",
-    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "NIST"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Cloud Custodian",
     "website": "https://cloudcustodian.io",
     "category": "Compliance as Code",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Open Source",
     "distinct": "Policy-driven cloud resource governance and automated remediation.",
-    "compliance": ["SOC 2", "PCI DSS", "HIPAA"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "HIPAA"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Syft",
     "website": "https://github.com/anchore/syft",
     "category": "SBOM & Supply Chain",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Developer-friendly SBOM generator with broad package ecosystem support.",
-    "compliance": ["NIST", "FedRAMP"]
+    "compliance": [
+      "NIST",
+      "FedRAMP"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Grype",
     "website": "https://github.com/anchore/grype",
     "category": "SBOM & Supply Chain",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Vulnerability scanner designed to pair directly with generated SBOMs.",
-    "compliance": ["NIST", "PCI DSS"]
+    "compliance": [
+      "NIST",
+      "PCI DSS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Permiso",
     "website": "https://permiso.io",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Commercial",
     "distinct": "Identity-centric detection focused on cloud service account abuse.",
-    "compliance": ["SOC 2", "FedRAMP"]
+    "compliance": [
+      "SOC 2",
+      "FedRAMP"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "PMapper",
     "website": "https://github.com/nccgroup/PMapper",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Privilege escalation path analysis for AWS IAM role relationships.",
-    "compliance": ["CIS", "NIST"]
+    "compliance": [
+      "CIS",
+      "NIST"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Scout Suite",
     "website": "https://github.com/nccgroup/ScoutSuite",
     "category": "CSPM",
-    "clouds": ["AWS", "Azure", "GCP"],
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
     "type": "Open Source",
     "distinct": "Multi-cloud security audit with visualized findings and drill-down.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Steampipe",
     "website": "https://steampipe.io",
     "category": "Compliance as Code",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Query cloud APIs with SQL for rapid compliance checks and dashboards.",
-    "compliance": ["SOC 2", "NIST", "PCI DSS"]
+    "compliance": [
+      "SOC 2",
+      "NIST",
+      "PCI DSS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "CloudMapper",
     "website": "https://github.com/duo-labs/cloudmapper",
     "category": "CSPM",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Visualizes AWS account relationships and attack paths for security review.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "aws-nuke",
     "website": "https://github.com/rebuy-de/aws-nuke",
     "category": "Compliance as Code",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Automates safe teardown of AWS resources to enforce clean account baselines.",
-    "compliance": ["NIST", "SOC 2"]
+    "compliance": [
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Pacu",
     "website": "https://github.com/RhinoSecurityLabs/pacu",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "AWS exploitation framework for testing IAM abuse paths and cloud misconfigurations.",
-    "compliance": ["NIST", "CIS"]
+    "compliance": [
+      "NIST",
+      "CIS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Security Monkey",
     "website": "https://github.com/netflix/security_monkey",
     "category": "CSPM",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Monitors cloud account changes and flags policy and configuration drift.",
-    "compliance": ["SOC 2", "NIST", "CIS"]
+    "compliance": [
+      "SOC 2",
+      "NIST",
+      "CIS"
+    ],
+    "curationConfidence": "provisional",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "CloudGoat",
     "website": "https://github.com/RhinoSecurityLabs/cloudgoat",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Purpose-built AWS scenarios for validating detection and IAM attack-path readiness.",
-    "compliance": ["NIST", "SOC 2"]
+    "compliance": [
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "provisional",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Cloudsplaining",
     "website": "https://github.com/salesforce/cloudsplaining",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Identifies risky IAM permissions and privilege-escalation patterns in AWS policies.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Terragoat",
     "website": "https://github.com/bridgecrewio/terragoat",
     "category": "IaC Security",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Deliberately vulnerable Terraform stack for testing IaC misconfiguration detection.",
-    "compliance": ["NIST", "CIS"]
+    "compliance": [
+      "NIST",
+      "CIS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Parliament",
     "website": "https://github.com/duo-labs/parliament",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Lints IAM policies to catch privilege, wildcard, and risky permission issues early.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "CloudTracker",
     "website": "https://github.com/duo-labs/cloudtracker",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Compares CloudTrail activity to granted IAM permissions to spot over-privileged identities.",
-    "compliance": ["NIST", "SOC 2"]
+    "compliance": [
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "SkyArk",
     "website": "https://github.com/cyberark/SkyArk",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Finds and assesses highly privileged AWS entities that increase account takeover risk.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "provisional",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "CloudSploit Scans",
     "website": "https://github.com/cloudsploit/scans",
     "category": "CSPM",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Large set of AWS security checks for identifying cloud misconfigurations at scale.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "AWS Inventory",
     "website": "https://github.com/nccgroup/aws-inventory",
     "category": "CSPM",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Builds comprehensive cross-region AWS asset inventories for exposure and drift analysis.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Cartography",
     "website": "https://github.com/lyft/cartography",
     "category": "Cloud IAM Auditing",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Graphs cloud assets and trust relationships to uncover risky access paths.",
-    "compliance": ["NIST", "SOC 2"]
+    "compliance": [
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "CloudQuery",
     "website": "https://github.com/cloudquery/cloudquery",
     "category": "Compliance as Code",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Extracts cloud configuration data into SQL tables for policy checks and reporting.",
-    "compliance": ["NIST", "PCI DSS", "SOC 2"]
+    "compliance": [
+      "NIST",
+      "PCI DSS",
+      "SOC 2"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "cdk-nag",
     "website": "https://github.com/cdklabs/cdk-nag",
     "category": "IaC Security",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Applies security and compliance rules to AWS CDK constructs during development.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "kube-bench",
     "website": "https://github.com/aquasecurity/kube-bench",
     "category": "Container Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Runs CIS Kubernetes benchmark checks against cluster nodes and control planes.",
-    "compliance": ["CIS", "NIST"]
+    "compliance": [
+      "CIS",
+      "NIST"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "kube-hunter",
     "website": "https://github.com/aquasecurity/kube-hunter",
     "category": "Container Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Performs active reconnaissance to identify exposed Kubernetes security weaknesses.",
-    "compliance": ["NIST", "CIS"]
+    "compliance": [
+      "NIST",
+      "CIS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Kubescape",
     "website": "https://github.com/kubescape/kubescape",
     "category": "Container Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Kubernetes posture scanner with framework mappings and risk prioritization guidance.",
-    "compliance": ["NIST", "CIS", "SOC 2"]
+    "compliance": [
+      "NIST",
+      "CIS",
+      "SOC 2"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Peirates",
     "website": "https://github.com/inguardians/peirates",
     "category": "Cloud IAM Auditing",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Simulates common Kubernetes-to-cloud privilege escalation paths in AWS environments.",
-    "compliance": ["NIST", "CIS"]
+    "compliance": [
+      "NIST",
+      "CIS"
+    ],
+    "curationConfidence": "provisional",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "GitGuardian ggshield",
     "website": "https://github.com/GitGuardian/ggshield",
     "category": "Secrets Scanning",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Freemium",
     "distinct": "Developer-friendly secret detection in commits and CI pipelines with strong accuracy.",
-    "compliance": ["SOC 2", "PCI DSS"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Orca Security",
     "website": "https://orca.security",
     "category": "CNAPP",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Commercial",
     "distinct": "Agentless CNAPP platform focused on broad cloud asset and risk visibility.",
-    "compliance": ["SOC 2", "PCI DSS", "FedRAMP"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "FedRAMP"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Lacework",
     "website": "https://www.lacework.com",
     "category": "CNAPP",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Commercial",
     "distinct": "Behavior-based CNAPP detection across cloud, containers, and identities.",
-    "compliance": ["SOC 2", "PCI DSS", "HIPAA"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "HIPAA"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Sysdig Secure",
     "website": "https://sysdig.com/products/secure/",
     "category": "CNAPP",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Commercial",
     "distinct": "Combines cloud posture, runtime threat detection, and container vulnerability controls.",
-    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "NIST"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Tenable Cloud Security",
     "website": "https://www.tenable.com/products/tenable-cloud-security",
     "category": "CNAPP",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Commercial",
     "distinct": "CNAPP offering with strong posture analytics and entitlement risk visibility.",
-    "compliance": ["SOC 2", "PCI DSS", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS",
+      "NIST"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "KICS",
     "website": "https://github.com/Checkmarx/kics",
     "category": "IaC Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Static analysis engine for Terraform, Kubernetes, and other IaC formats.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Terrascan",
     "website": "https://github.com/tenable/terrascan",
     "category": "IaC Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Policy-based IaC scanner with broad cloud provider and framework coverage.",
-    "compliance": ["CIS", "NIST", "PCI DSS"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "PCI DSS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "cfn-nag",
     "website": "https://github.com/stelligent/cfn_nag",
     "category": "IaC Security",
-    "clouds": ["AWS"],
+    "clouds": [
+      "AWS"
+    ],
     "type": "Open Source",
     "distinct": "Lints CloudFormation templates to detect risky security configurations before deploy.",
-    "compliance": ["CIS", "NIST", "SOC 2"]
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Trivy Operator",
     "website": "https://github.com/aquasecurity/trivy-operator",
     "category": "Container Security",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Brings continuous vulnerability and configuration scanning into Kubernetes clusters.",
-    "compliance": ["CIS", "NIST"]
+    "compliance": [
+      "CIS",
+      "NIST"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Kyverno",
     "website": "https://github.com/kyverno/kyverno",
     "category": "Compliance as Code",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Kubernetes-native policy engine for enforceable guardrails and admission controls.",
-    "compliance": ["NIST", "SOC 2", "PCI DSS"]
+    "compliance": [
+      "NIST",
+      "SOC 2",
+      "PCI DSS"
+    ],
+    "curationConfidence": "high",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "Kubewarden",
     "website": "https://github.com/kubewarden/kubewarden-controller",
     "category": "Compliance as Code",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Admission policy framework using WebAssembly for portable Kubernetes enforcement.",
-    "compliance": ["NIST", "CIS"]
+    "compliance": [
+      "NIST",
+      "CIS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "detect-secrets",
     "website": "https://github.com/Yelp/detect-secrets",
     "category": "Secrets Scanning",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Pre-commit focused secret scanner with baseline workflows for noisy repositories.",
-    "compliance": ["SOC 2", "PCI DSS"]
+    "compliance": [
+      "SOC 2",
+      "PCI DSS"
+    ],
+    "curationConfidence": "medium",
+    "lastReviewed": "2026-03-08"
   },
   {
     "name": "shhgit",
     "website": "https://github.com/eth0izzle/shhgit",
     "category": "Secrets Scanning",
-    "clouds": ["Multi"],
+    "clouds": [
+      "Multi"
+    ],
     "type": "Open Source",
     "distinct": "Real-time GitHub secret monitoring to quickly surface exposed credentials.",
-    "compliance": ["SOC 2", "NIST"]
+    "compliance": [
+      "SOC 2",
+      "NIST"
+    ],
+    "curationConfidence": "provisional",
+    "lastReviewed": "2026-03-08"
   }
 ]
