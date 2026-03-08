@@ -250,5 +250,95 @@
     "type": "Open Source",
     "distinct": "Finds and assesses highly privileged AWS entities that increase account takeover risk.",
     "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "CloudSploit Scans",
+    "website": "https://github.com/cloudsploit/scans",
+    "category": "CSPM",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Large set of AWS security checks for identifying cloud misconfigurations at scale.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "AWS Inventory",
+    "website": "https://github.com/nccgroup/aws-inventory",
+    "category": "CSPM",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Builds comprehensive cross-region AWS asset inventories for exposure and drift analysis.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "Cartography",
+    "website": "https://github.com/lyft/cartography",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Graphs cloud assets and trust relationships to uncover risky access paths.",
+    "compliance": ["NIST", "SOC 2"]
+  },
+  {
+    "name": "CloudQuery",
+    "website": "https://github.com/cloudquery/cloudquery",
+    "category": "Compliance as Code",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Extracts cloud configuration data into SQL tables for policy checks and reporting.",
+    "compliance": ["NIST", "PCI DSS", "SOC 2"]
+  },
+  {
+    "name": "cdk-nag",
+    "website": "https://github.com/cdklabs/cdk-nag",
+    "category": "IaC Security",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Applies security and compliance rules to AWS CDK constructs during development.",
+    "compliance": ["CIS", "NIST", "SOC 2"]
+  },
+  {
+    "name": "kube-bench",
+    "website": "https://github.com/aquasecurity/kube-bench",
+    "category": "Container Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Runs CIS Kubernetes benchmark checks against cluster nodes and control planes.",
+    "compliance": ["CIS", "NIST"]
+  },
+  {
+    "name": "kube-hunter",
+    "website": "https://github.com/aquasecurity/kube-hunter",
+    "category": "Container Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Performs active reconnaissance to identify exposed Kubernetes security weaknesses.",
+    "compliance": ["NIST", "CIS"]
+  },
+  {
+    "name": "Kubescape",
+    "website": "https://github.com/kubescape/kubescape",
+    "category": "Container Security",
+    "clouds": ["Multi"],
+    "type": "Open Source",
+    "distinct": "Kubernetes posture scanner with framework mappings and risk prioritization guidance.",
+    "compliance": ["NIST", "CIS", "SOC 2"]
+  },
+  {
+    "name": "Peirates",
+    "website": "https://github.com/inguardians/peirates",
+    "category": "Cloud IAM Auditing",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Simulates common Kubernetes-to-cloud privilege escalation paths in AWS environments.",
+    "compliance": ["NIST", "CIS"]
+  },
+  {
+    "name": "GitGuardian ggshield",
+    "website": "https://github.com/GitGuardian/ggshield",
+    "category": "Secrets Scanning",
+    "clouds": ["Multi"],
+    "type": "Freemium",
+    "distinct": "Developer-friendly secret detection in commits and CI pipelines with strong accuracy.",
+    "compliance": ["SOC 2", "PCI DSS"]
   }
 ]
