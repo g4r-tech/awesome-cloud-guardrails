@@ -741,5 +741,159 @@
       "SOC 2",
       "NIST"
     ]
+  },
+  {
+    "name": "Automated Security Helper (ASH)",
+    "website": "https://github.com/awslabs/automated-security-helper",
+    "category": "Compliance as Code",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Runs multiple code and IaC security scanners in isolated containers with one aggregated security report.",
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ]
+  },
+  {
+    "name": "Cloud-Nuke",
+    "website": "https://github.com/gruntwork-io/cloud-nuke",
+    "category": "Compliance as Code",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Deletes cloud resources at scale to enforce clean account baselines and reduce stale attack surface.",
+    "compliance": [
+      "NIST",
+      "SOC 2",
+      "CIS"
+    ]
+  },
+  {
+    "name": "iam-floyd",
+    "website": "https://github.com/udondan/iam-floyd",
+    "category": "Cloud IAM Auditing",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Generates AWS IAM policies programmatically with a fluent interface to reduce policy authoring mistakes.",
+    "compliance": [
+      "NIST",
+      "CIS"
+    ]
+  },
+  {
+    "name": "cloudfox",
+    "website": "https://github.com/bishopfox/cloudfox",
+    "category": "Cloud IAM Auditing",
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "type": "Open Source",
+    "distinct": "Enumerates cloud attack paths and identity exposure from an attacker perspective for rapid triage.",
+    "compliance": [
+      "NIST",
+      "CIS",
+      "SOC 2"
+    ]
+  },
+  {
+    "name": "Stratus Red Team",
+    "website": "https://github.com/datadog/stratus-red-team",
+    "category": "Cloud IAM Auditing",
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "type": "Open Source",
+    "distinct": "Executes cloud attack emulation scenarios to validate detections and incident response workflows.",
+    "compliance": [
+      "NIST",
+      "SOC 2",
+      "FedRAMP"
+    ]
+  },
+  {
+    "name": "CloudFormation Guard",
+    "website": "https://github.com/aws-cloudformation/cloudformation-guard",
+    "category": "IaC Security",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Policy-as-code validation for CloudFormation templates to block insecure infrastructure before deployment.",
+    "compliance": [
+      "CIS",
+      "NIST",
+      "PCI DSS"
+    ]
+  },
+  {
+    "name": "Yor",
+    "website": "https://github.com/bridgecrewio/yor",
+    "category": "IaC Security",
+    "clouds": [
+      "AWS",
+      "Azure",
+      "GCP"
+    ],
+    "type": "Open Source",
+    "distinct": "Automatically tags IaC resources with traceability metadata to strengthen ownership and control mapping.",
+    "compliance": [
+      "SOC 2",
+      "NIST"
+    ]
+  },
+  {
+    "name": "CFripper",
+    "website": "https://github.com/skyscanner/cfripper",
+    "category": "IaC Security",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Static analysis for CloudFormation templates that finds risky permissions and misconfigurations pre-deploy.",
+    "compliance": [
+      "CIS",
+      "NIST",
+      "PCI DSS"
+    ]
+  },
+  {
+    "name": "Policy Sentry",
+    "website": "https://github.com/salesforce/policy_sentry",
+    "category": "Cloud IAM Auditing",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Builds and analyzes least-privilege IAM policies using an action and resource database model.",
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ]
+  },
+  {
+    "name": "IAMSpy",
+    "website": "https://github.com/WithSecureLabs/IAMSpy",
+    "category": "Cloud IAM Auditing",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Analyzes IAM permissions and trust paths to surface unintended access and escalation opportunities.",
+    "compliance": [
+      "CIS",
+      "NIST",
+      "SOC 2"
+    ]
   }
 ]
