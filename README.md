@@ -32,6 +32,7 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 - `category`: CSPM, CNAPP, IaC Security, Secrets Scanning, Container Security, Compliance as Code, SBOM & Supply Chain, Cloud IAM Auditing
 - `clouds`: AWS, Azure, GCP, Multi
 - `type`: Open Source, Commercial, Freemium
+- [KubeStellar Console](https://github.com/kubestellar/console) - Multi-cluster Kubernetes dashboard with container security monitoring, supply chain security (SBOM, SLSA, Cosign), Kyverno policy enforcement, and compliance dashboards. CNCF Sandbox project.
 
 ## Tool Index
 
