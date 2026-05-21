@@ -19,11 +19,11 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 
 | Metric | Value |
 |---|---:|
-| Total tools | 70 |
+| Total tools | 71 |
 | Categories | 8 |
 | Cloud support values in schema | 4 |
 | Compliance frameworks referenced | 7 |
-| Open Source tools | 61 |
+| Open Source tools | 62 |
 | Commercial tools | 7 |
 | Freemium tools | 2 |
 
@@ -35,12 +35,13 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 
 ## Tool Index
 
-### CSPM (7)
+### CSPM (8)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
 | [AWS Inventory](https://github.com/nccgroup/aws-inventory) | Open Source | AWS | Builds comprehensive cross-region AWS asset inventories for exposure and drift analysis. |
 | [CloudMapper](https://github.com/duo-labs/cloudmapper) | Open Source | AWS | Visualizes AWS account relationships and attack paths for security review. |
+| [CloudSploit Scans](https://github.com/cloudsploit/scans) | Open Source | AWS | Large set of AWS security checks for identifying cloud misconfigurations at scale. |
 | [CloudSploit Scans](https://github.com/cloudsploit/scans) | Open Source | AWS | Large set of AWS security checks for identifying cloud misconfigurations at scale. |
 | [Prowler](https://prowler.com) | Open Source | AWS, Azure, GCP | Large benchmark coverage with pragmatic cloud misconfiguration checks. |
 | [Scout Suite](https://github.com/nccgroup/ScoutSuite) | Open Source | AWS, Azure, GCP | Multi-cloud security audit with visualized findings and drill-down. |
