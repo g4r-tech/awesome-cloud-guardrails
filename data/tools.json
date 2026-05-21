@@ -895,5 +895,146 @@
       "NIST",
       "SOC 2"
     ]
+  },
+  {
+    "name": "Cosign",
+    "website": "https://github.com/sigstore/cosign",
+    "category": "SBOM & Supply Chain",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Signs and verifies container images and artifacts to enforce trusted supply chain provenance.",
+    "compliance": [
+      "SLSA",
+      "NIST"
+    ]
+  },
+  {
+    "name": "OSV-Scanner",
+    "website": "https://github.com/google/osv-scanner",
+    "category": "SBOM & Supply Chain",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Matches open-source dependencies against the OSV vulnerability database for accurate, actionable triage.",
+    "compliance": [
+      "NIST",
+      "CIS"
+    ]
+  },
+  {
+    "name": "Dependency-Track",
+    "website": "https://dependencytrack.org",
+    "category": "SBOM & Supply Chain",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Continuously analyzes SBOMs to monitor component risk across application portfolios over time.",
+    "compliance": [
+      "SOC 2",
+      "NIST",
+      "PCI DSS"
+    ]
+  },
+  {
+    "name": "in-toto",
+    "website": "https://in-toto.io",
+    "category": "SBOM & Supply Chain",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Generates cryptographic attestations for each supply chain step to detect tampering in build pipelines.",
+    "compliance": [
+      "SLSA",
+      "NIST"
+    ]
+  },
+  {
+    "name": "OPA Gatekeeper",
+    "website": "https://github.com/open-policy-agent/gatekeeper",
+    "category": "Compliance as Code",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Enforces OPA policies in Kubernetes through admission control with reusable constraint templates and audit reporting.",
+    "compliance": [
+      "CIS",
+      "NIST"
+    ]
+  },
+  {
+    "name": "Conftest",
+    "website": "https://www.conftest.dev",
+    "category": "Compliance as Code",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Tests structured configuration files such as Kubernetes, Terraform, and Dockerfiles against OPA Rego policies.",
+    "compliance": [
+      "CIS",
+      "NIST"
+    ]
+  },
+  {
+    "name": "git-secrets",
+    "website": "https://github.com/awslabs/git-secrets",
+    "category": "Secrets Scanning",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Prevents committing AWS credentials and other secret patterns by hooking Git commit and history scans.",
+    "compliance": [
+      "SOC 2",
+      "PCI DSS"
+    ]
+  },
+  {
+    "name": "Clair",
+    "website": "https://github.com/quay/clair",
+    "category": "Container Security",
+    "clouds": [
+      "Multi"
+    ],
+    "type": "Open Source",
+    "distinct": "Performs static vulnerability analysis of container images using continuously ingested CVE feeds across distributions.",
+    "compliance": [
+      "CIS",
+      "PCI DSS"
+    ]
+  },
+  {
+    "name": "ROADtools",
+    "website": "https://github.com/dirkjanm/ROADtools",
+    "category": "Cloud IAM Auditing",
+    "clouds": [
+      "Azure"
+    ],
+    "type": "Open Source",
+    "distinct": "Enumerates Microsoft Entra (Azure AD) objects and relationships to map identity attack paths in tenant environments.",
+    "compliance": [
+      "CIS",
+      "NIST"
+    ]
+  },
+  {
+    "name": "ZeusCloud",
+    "website": "https://github.com/Zeus-Labs/ZeusCloud",
+    "category": "CSPM",
+    "clouds": [
+      "AWS"
+    ],
+    "type": "Open Source",
+    "distinct": "Open-source CSPM that builds an asset graph and prioritizes misconfigurations by exploit-path risk.",
+    "compliance": [
+      "CIS",
+      "SOC 2"
+    ]
   }
 ]
