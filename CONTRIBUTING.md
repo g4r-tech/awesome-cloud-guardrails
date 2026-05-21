@@ -36,9 +36,8 @@ Each tool entry must include:
 
 ## Before submitting
 
-1. Add your tool to `data/tools.json` with all required fields
-2. Run `node scripts/generate-readme.mjs` to regenerate README.md
-3. Commit both `data/tools.json` and the updated `README.md`
+1. Add your tool to `data/tools.json` with all required fields and allowed values
+2. Do not manually edit README.md—it is automatically regenerated from the dataset
 
 ## Quality bar
 
