@@ -19,11 +19,11 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 
 | Metric | Value |
 |---|---:|
-| Total tools | 60 |
+| Total tools | 70 |
 | Categories | 8 |
 | Cloud support values in schema | 4 |
-| Compliance frameworks referenced | 6 |
-| Open Source tools | 51 |
+| Compliance frameworks referenced | 7 |
+| Open Source tools | 61 |
 | Commercial tools | 7 |
 | Freemium tools | 2 |
 
@@ -35,7 +35,7 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 
 ## Tool Index
 
-### CSPM (6)
+### CSPM (7)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
@@ -45,6 +45,7 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [Prowler](https://prowler.com) | Open Source | AWS, Azure, GCP | Large benchmark coverage with pragmatic cloud misconfiguration checks. |
 | [Scout Suite](https://github.com/nccgroup/ScoutSuite) | Open Source | AWS, Azure, GCP | Multi-cloud security audit with visualized findings and drill-down. |
 | [Security Monkey](https://github.com/netflix/security_monkey) | Open Source | AWS | Monitors cloud account changes and flags policy and configuration drift. |
+| [ZeusCloud](https://github.com/Zeus-Labs/ZeusCloud) | Open Source | AWS | Open-source CSPM that builds an asset graph and prioritizes misconfigurations by exploit-path risk. |
 
 ### CNAPP (6)
 
@@ -73,28 +74,30 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [tfsec](https://aquasecurity.github.io/tfsec/) | Open Source | AWS, Azure, GCP | Fast local Terraform static analysis with clear remediation output. |
 | [Yor](https://github.com/bridgecrewio/yor) | Open Source | AWS, Azure, GCP | Automatically tags IaC resources with traceability metadata to strengthen ownership and control mapping. |
 
-### Secrets Scanning (5)
+### Secrets Scanning (6)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
 | [detect-secrets](https://github.com/Yelp/detect-secrets) | Open Source | Multi | Pre-commit focused secret scanner with baseline workflows for noisy repositories. |
+| [git-secrets](https://github.com/awslabs/git-secrets) | Open Source | Multi | Prevents committing AWS credentials and other secret patterns by hooking Git commit and history scans. |
 | [GitGuardian ggshield](https://github.com/GitGuardian/ggshield) | Freemium | Multi | Developer-friendly secret detection in commits and CI pipelines with strong accuracy. |
 | [Gitleaks](https://gitleaks.io) | Open Source | Multi | Simple, fast, and CI-friendly scanner for leaked credentials. |
 | [shhgit](https://github.com/eth0izzle/shhgit) | Open Source | Multi | Real-time GitHub secret monitoring to quickly surface exposed credentials. |
 | [TruffleHog](https://trufflesecurity.com/trufflehog) | Open Source | Multi | High-signal secret discovery with verified credential checks. |
 
-### Container Security (6)
+### Container Security (7)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
 | [Aqua Trivy](https://trivy.dev) | Open Source | Multi | Single CLI for image, filesystem, and IaC vulnerability checks. |
+| [Clair](https://github.com/quay/clair) | Open Source | Multi | Performs static vulnerability analysis of container images using continuously ingested CVE feeds across distributions. |
 | [Falco](https://falco.org) | Open Source | Multi | Runtime threat detection for containers and Kubernetes workloads. |
 | [kube-bench](https://github.com/aquasecurity/kube-bench) | Open Source | Multi | Runs CIS Kubernetes benchmark checks against cluster nodes and control planes. |
 | [kube-hunter](https://github.com/aquasecurity/kube-hunter) | Open Source | Multi | Performs active reconnaissance to identify exposed Kubernetes security weaknesses. |
 | [Kubescape](https://github.com/kubescape/kubescape) | Open Source | Multi | Kubernetes posture scanner with framework mappings and risk prioritization guidance. |
 | [Trivy Operator](https://github.com/aquasecurity/trivy-operator) | Open Source | Multi | Brings continuous vulnerability and configuration scanning into Kubernetes clusters. |
 
-### Compliance as Code (9)
+### Compliance as Code (11)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
@@ -103,19 +106,25 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [Cloud Custodian](https://cloudcustodian.io) | Open Source | AWS, Azure, GCP | Policy-driven cloud resource governance and automated remediation. |
 | [Cloud-Nuke](https://github.com/gruntwork-io/cloud-nuke) | Open Source | AWS | Deletes cloud resources at scale to enforce clean account baselines and reduce stale attack surface. |
 | [CloudQuery](https://github.com/cloudquery/cloudquery) | Open Source | Multi | Extracts cloud configuration data into SQL tables for policy checks and reporting. |
+| [Conftest](https://www.conftest.dev) | Open Source | Multi | Tests structured configuration files such as Kubernetes, Terraform, and Dockerfiles against OPA Rego policies. |
 | [Kubewarden](https://github.com/kubewarden/kubewarden-controller) | Open Source | Multi | Admission policy framework using WebAssembly for portable Kubernetes enforcement. |
 | [Kyverno](https://github.com/kyverno/kyverno) | Open Source | Multi | Kubernetes-native policy engine for enforceable guardrails and admission controls. |
+| [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) | Open Source | Multi | Enforces OPA policies in Kubernetes through admission control with reusable constraint templates and audit reporting. |
 | [Open Policy Agent](https://www.openpolicyagent.org) | Open Source | Multi | General-purpose policy engine used from CI to admission control. |
 | [Steampipe](https://steampipe.io) | Open Source | Multi | Query cloud APIs with SQL for rapid compliance checks and dashboards. |
 
-### SBOM & Supply Chain (2)
+### SBOM & Supply Chain (6)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
+| [Cosign](https://github.com/sigstore/cosign) | Open Source | Multi | Signs and verifies container images and artifacts to enforce trusted supply chain provenance. |
+| [Dependency-Track](https://dependencytrack.org) | Open Source | Multi | Continuously analyzes SBOMs to monitor component risk across application portfolios over time. |
 | [Grype](https://github.com/anchore/grype) | Open Source | Multi | Vulnerability scanner designed to pair directly with generated SBOMs. |
+| [in-toto](https://in-toto.io) | Open Source | Multi | Generates cryptographic attestations for each supply chain step to detect tampering in build pipelines. |
+| [OSV-Scanner](https://github.com/google/osv-scanner) | Open Source | Multi | Matches open-source dependencies against the OSV vulnerability database for accurate, actionable triage. |
 | [Syft](https://github.com/anchore/syft) | Open Source | Multi | Developer-friendly SBOM generator with broad package ecosystem support. |
 
-### Cloud IAM Auditing (15)
+### Cloud IAM Auditing (16)
 
 | Tool | Type | Clouds | Why It Stands Out |
 |---|---|---|---|
@@ -132,6 +141,7 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [Permiso](https://permiso.io) | Commercial | AWS, Azure, GCP | Identity-centric detection focused on cloud service account abuse. |
 | [PMapper](https://github.com/nccgroup/PMapper) | Open Source | AWS | Privilege escalation path analysis for AWS IAM role relationships. |
 | [Policy Sentry](https://github.com/salesforce/policy_sentry) | Open Source | AWS | Builds and analyzes least-privilege IAM policies using an action and resource database model. |
+| [ROADtools](https://github.com/dirkjanm/ROADtools) | Open Source | Azure | Enumerates Microsoft Entra (Azure AD) objects and relationships to map identity attack paths in tenant environments. |
 | [SkyArk](https://github.com/cyberark/SkyArk) | Open Source | AWS | Finds and assesses highly privileged AWS entities that increase account takeover risk. |
 | [Stratus Red Team](https://github.com/datadog/stratus-red-team) | Open Source | AWS, Azure, GCP | Executes cloud attack emulation scenarios to validate detections and incident response workflows. |
 
