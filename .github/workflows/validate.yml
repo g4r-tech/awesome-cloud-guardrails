@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  pull-requests: write
 
 jobs:
   validate:
@@ -15,73 +14,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Detect changed files
-        if: github.event_name == 'pull_request'
-        id: changes
-        run: |
-          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
-          CHANGED_FILES="$(git diff --name-only "origin/${{ github.base_ref }}"...HEAD)"
-
-          echo "changed_files<<EOF" >> "$GITHUB_OUTPUT"
-          echo "$CHANGED_FILES" >> "$GITHUB_OUTPUT"
-          echo "EOF" >> "$GITHUB_OUTPUT"
-
-          README_CHANGED=false
-          DATA_CHANGED=false
-          echo "$CHANGED_FILES" | grep -qx 'README.md' && README_CHANGED=true
-          echo "$CHANGED_FILES" | grep -qx 'data/tools.json' && DATA_CHANGED=true
-
-          if [[ "$README_CHANGED" == true && "$DATA_CHANGED" == false ]]; then
-            echo "readme_only=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "readme_only=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Validate
-        id: validate
-        run: node scripts/validate-tools.mjs 2>&1 | tee validate.log
-        continue-on-error: true
-
-      - name: Build PR feedback comment
-        if: github.event_name == 'pull_request' && (steps.validate.outcome == 'failure' || steps.changes.outputs.readme_only == 'true')
-        run: |
-          {
-            echo "❌ **Your PR does not meet the required contribution checks.**"
-            echo
-
-            if [[ "${{ steps.changes.outputs.readme_only }}" == 'true' ]]; then
-              echo '- This PR changes only `README.md`.'
-              echo '- Add or update tools in `data/tools.json` instead; README is generated automatically.'
-              echo
-            fi
-
-            if [[ "${{ steps.validate.outcome }}" == 'failure' ]]; then
-              echo "- Dataset validation failed."
-              echo
-              echo "Validation output (last 20 lines):"
-              echo '```text'
-              tail -20 validate.log
-              echo '```'
-              echo
-            fi
-
-            echo "See CONTRIBUTING.md for the required format and workflow."
-          } > pr-feedback.md
-
-      - name: Comment on PR when checks fail
-        if: github.event_name == 'pull_request' && (steps.validate.outcome == 'failure' || steps.changes.outputs.readme_only == 'true')
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          body-path: pr-feedback.md
-
-      - name: Fail workflow when checks fail
-        if: steps.validate.outcome == 'failure' || steps.changes.outputs.readme_only == 'true'
-        run: exit 1
+        run: node scripts/validate-tools.mjs

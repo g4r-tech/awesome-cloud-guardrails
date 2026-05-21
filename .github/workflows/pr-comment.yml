@@ -1,0 +1,60 @@
+name: PR Contribution Check
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR and comment if needed
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+
+            // Get list of changed files via API (no fork code executed)
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number,
+            });
+
+            const changed = files.map(f => f.filename);
+            const readmeChanged = changed.includes('README.md');
+            const dataChanged = changed.includes('data/tools.json');
+            const readmeOnly = readmeChanged && !dataChanged;
+
+            if (!readmeOnly) return;
+
+            // Check if we already commented to avoid duplicates
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+            });
+
+            const alreadyCommented = comments.some(
+              c => c.user.login === 'github-actions[bot]' &&
+                   c.body.includes('This PR changes only')
+            );
+
+            if (alreadyCommented) return;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr.number,
+              body: [
+                '❌ **Your PR does not meet the required contribution checks.**',
+                '',
+                '- This PR changes only `README.md`.',
+                '- Add or update tools in `data/tools.json` instead; README is generated automatically.',
+                '',
+                'See [CONTRIBUTING.md](https://github.com/g4r-tech/awesome-cloud-guardrails/blob/main/CONTRIBUTING.md) for the required format.',
+              ].join('\n'),
+            });
