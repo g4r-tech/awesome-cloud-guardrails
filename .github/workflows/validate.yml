@@ -57,8 +57,8 @@ jobs:
             echo
 
             if [[ "${{ steps.changes.outputs.readme_only }}" == 'true' ]]; then
-              echo "- This PR changes only `README.md`."
-              echo "- Add or update tools in `data/tools.json` instead; README is generated automatically."
+              echo '- This PR changes only `README.md`.'
+              echo '- Add or update tools in `data/tools.json` instead; README is generated automatically.'
               echo
             fi
 
