@@ -34,6 +34,12 @@ Each tool entry must include:
 - `Commercial`
 - `Freemium`
 
+## Before submitting
+
+1. Add your tool to `data/tools.json` with all required fields
+2. Run `node scripts/generate-readme.mjs` to regenerate README.md
+3. Commit both `data/tools.json` and the updated `README.md`
+
 ## Quality bar
 
 - Avoid duplicates

@@ -320,6 +320,15 @@
     ]
   },
   {
+    "name": "CloudSploit Scans",
+    "website": "https://github.com/cloudsploit/scans",
+    "category": "CSPM",
+    "clouds": ["AWS"],
+    "type": "Open Source",
+    "distinct": "Large set of AWS security checks for identifying cloud misconfigurations at scale.",
+    "compliance": ["CIS", "SOC 2"]
+  },
+  {
     "name": "Security Monkey",
     "website": "https://github.com/netflix/security_monkey",
     "category": "CSPM",

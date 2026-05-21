@@ -1,0 +1,40 @@
+name: Validate Dataset and Comment
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate
+        id: validate
+        run: |
+          node scripts/validate-tools.mjs
+        continue-on-error: true
+      - name: Comment on PR if validation fails
+        if: steps.validate.outcome == 'failure'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ❌ **Your PR does not meet the required dataset format.**
+            
+            Please ensure your submission follows all requirements in [CONTRIBUTING.md](https://github.com/g4r-tech/awesome-cloud-guardrails/blob/main/CONTRIBUTING.md):
+            - Add your tool to `data/tools.json` with all required fields and allowed values.
+            - Do not add tools directly to the README.
+            - **After updating `data/tools.json`, regenerate the README:** `node scripts/generate-readme.mjs`
+            - Commit both `data/tools.json` and the updated `README.md`.
+            - See the schema and allowed values in the repo for details.
+            
+            If you need help, see the examples in the repo or ask for clarification.
