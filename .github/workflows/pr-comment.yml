@@ -43,18 +43,20 @@ jobs:
                    c.body.includes('This PR changes only')
             );
 
-            if (alreadyCommented) return;
+            if (!alreadyCommented) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr.number,
+                body: [
+                  '❌ **Your PR does not meet the required contribution checks.**',
+                  '',
+                  '- This PR changes only `README.md`.',
+                  '- Add or update tools in `data/tools.json` instead; README is generated automatically.',
+                  '',
+                  'See [CONTRIBUTING.md](https://github.com/g4r-tech/awesome-cloud-guardrails/blob/main/CONTRIBUTING.md) for the required format.',
+                ].join('\n'),
+              });
+            }
 
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: pr.number,
-              body: [
-                '❌ **Your PR does not meet the required contribution checks.**',
-                '',
-                '- This PR changes only `README.md`.',
-                '- Add or update tools in `data/tools.json` instead; README is generated automatically.',
-                '',
-                'See [CONTRIBUTING.md](https://github.com/g4r-tech/awesome-cloud-guardrails/blob/main/CONTRIBUTING.md) for the required format.',
-              ].join('\n'),
-            });
+            core.setFailed('README-only PRs are not allowed. Add your tool to data/tools.json instead.');
