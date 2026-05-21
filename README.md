@@ -98,6 +98,7 @@ Most lists are link dumps. This repo is a schema-driven dataset for a public dir
 | [Kubescape](https://github.com/kubescape/kubescape) | Open Source | Multi | Kubernetes posture scanner with framework mappings and risk prioritization guidance. |
 | [Trivy Operator](https://github.com/aquasecurity/trivy-operator) | Open Source | Multi | Brings continuous vulnerability and configuration scanning into Kubernetes clusters. |
 | [KubeStellar Console](https://github.com/kubestellar/console) | Open Source | Multi | Container security with supply chain security (SBOM, SLSA, Cosign) and compliance dashboards. |
+| [KubeStellar Console](https://github.com/kubestellar/console) | Open Source | Multi | Container security with supply chain security (SBOM, SLSA, Cosign) and compliance dashboards. |
 
 ### Compliance as Code (11)
 
